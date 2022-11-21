@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Bold</string>
+            <string>SFPro-Medium</string>
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DogsDetailHeaderView" customModule="DogsListApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="564"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5I-nb-0Pd">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="564"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Breed Name :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-rn-mEI">
+                            <rect key="frame" x="19" y="30" width="530" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="gs3-vc-g6l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wOl-lr-9dR" customClass="CustomImageView" customModule="DogsListApp" customModuleProvider="target">
+                            <rect key="frame" x="27" y="77" width="514" height="275"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="275" id="Nav-Sk-DSY"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nmR-Kj-Sci">
+                            <rect key="frame" x="27" y="372" width="514" height="184"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CFz-Cu-MZc">
+                                    <rect key="frame" x="0.0" y="0.0" width="514" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQZ-hV-386">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8e-sq-pNT">
+                                            <rect key="frame" x="116" y="0.0" width="398" height="37"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-QG-gzh">
+                                    <rect key="frame" x="0.0" y="45" width="514" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SP-e9-N7u">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="7eX-iV-OFH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dh-A4-QGL">
+                                            <rect key="frame" x="116" y="0.0" width="398" height="37"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eU5-jz-9cB">
+                                    <rect key="frame" x="0.0" y="90" width="514" height="12.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperament" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnc-v0-dq0">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="12.5"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbW-60-CmD">
+                                            <rect key="frame" x="116" y="0.0" width="398" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kau-gz-7ge">
+                                    <rect key="frame" x="0.0" y="110.5" width="514" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed group" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e2-JT-98F">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfA-SZ-FjN">
+                                            <rect key="frame" x="116" y="0.0" width="398" height="37"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2Lj-XQ-HxX">
+                                    <rect key="frame" x="0.0" y="155.5" width="514" height="28.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vey-pg-SAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-7Q-utw">
+                                            <rect key="frame" x="116" y="0.0" width="398" height="28.5"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Hnc-v0-dq0" firstAttribute="width" secondItem="7SP-e9-N7u" secondAttribute="width" id="8P8-xm-v6w"/>
+                                <constraint firstItem="iQZ-hV-386" firstAttribute="width" secondItem="7SP-e9-N7u" secondAttribute="width" id="Evm-jS-EAB"/>
+                                <constraint firstItem="4e2-JT-98F" firstAttribute="width" secondItem="7SP-e9-N7u" secondAttribute="width" id="N85-Nf-2Ko"/>
+                                <constraint firstItem="7SP-e9-N7u" firstAttribute="width" secondItem="Vey-pg-SAk" secondAttribute="width" id="S4N-Oh-ZJ4"/>
+                                <constraint firstAttribute="trailing" secondItem="CFz-Cu-MZc" secondAttribute="trailing" id="UmV-yq-nyE"/>
+                                <constraint firstItem="eU5-jz-9cB" firstAttribute="trailing" secondItem="CFz-Cu-MZc" secondAttribute="trailing" id="gvk-uZ-QCF"/>
+                                <constraint firstItem="kau-gz-7ge" firstAttribute="trailing" secondItem="2u4-QG-gzh" secondAttribute="trailing" id="hoE-ZS-BDY"/>
+                                <constraint firstItem="2Lj-XQ-HxX" firstAttribute="trailing" secondItem="kau-gz-7ge" secondAttribute="trailing" id="m6d-ta-MgA"/>
+                                <constraint firstItem="2u4-QG-gzh" firstAttribute="trailing" secondItem="eU5-jz-9cB" secondAttribute="trailing" id="vxR-Wv-rNm"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZUP-rn-mEI" firstAttribute="top" secondItem="U5I-nb-0Pd" secondAttribute="top" constant="30" id="0OT-6P-qdd"/>
+                        <constraint firstItem="ZUP-rn-mEI" firstAttribute="width" secondItem="U5I-nb-0Pd" secondAttribute="width" multiplier="345:370" id="0YH-2i-n95"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nmR-Kj-Sci" secondAttribute="bottom" constant="8" id="8if-4x-WQY"/>
+                        <constraint firstItem="nmR-Kj-Sci" firstAttribute="trailing" secondItem="wOl-lr-9dR" secondAttribute="trailing" id="LNR-QZ-eFz"/>
+                        <constraint firstItem="wOl-lr-9dR" firstAttribute="top" secondItem="ZUP-rn-mEI" secondAttribute="bottom" constant="22" id="O3C-O5-pkZ"/>
+                        <constraint firstItem="nmR-Kj-Sci" firstAttribute="leading" secondItem="wOl-lr-9dR" secondAttribute="leading" id="QbZ-Lg-bLY"/>
+                        <constraint firstItem="ZUP-rn-mEI" firstAttribute="centerX" secondItem="U5I-nb-0Pd" secondAttribute="centerX" id="aIW-2H-RkC"/>
+                        <constraint firstItem="wOl-lr-9dR" firstAttribute="centerX" secondItem="U5I-nb-0Pd" secondAttribute="centerX" id="cKb-9f-1Zv"/>
+                        <constraint firstItem="nmR-Kj-Sci" firstAttribute="top" secondItem="wOl-lr-9dR" secondAttribute="bottom" constant="20" id="jC1-GK-PxP"/>
+                        <constraint firstItem="wOl-lr-9dR" firstAttribute="width" secondItem="U5I-nb-0Pd" secondAttribute="width" multiplier="335:370" id="wb4-oc-R7h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="U5I-nb-0Pd" secondAttribute="trailing" id="T7Y-y5-DDh"/>
+                <constraint firstItem="U5I-nb-0Pd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ys7-6m-grJ"/>
+                <constraint firstItem="U5I-nb-0Pd" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="wMM-h7-dYw"/>
+                <constraint firstItem="U5I-nb-0Pd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yCR-St-EGj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dogBridGroupLabel" destination="bfA-SZ-FjN" id="b3a-Qb-brd"/>
+                <outlet property="dogBridLabel" destination="ZUP-rn-mEI" id="cS4-Yf-MXe"/>
+                <outlet property="dogHeightLabel" destination="4Dh-A4-QGL" id="Rxo-yp-l5N"/>
+                <outlet property="dogImage" destination="wOl-lr-9dR" id="rdd-lu-fxP"/>
+                <outlet property="dogOriginLabel" destination="fXN-7Q-utw" id="XLj-kO-ypz"/>
+                <outlet property="dogTemperament" destination="VbW-60-CmD" id="w3Z-SV-JhM"/>
+                <outlet property="dogWeightLabel" destination="G8e-sq-pNT" id="1eC-eu-oGN"/>
+            </connections>
+            <point key="canvasLocation" x="249.27536231884059" y="0.6696428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -14,8 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //UINavigationBar.appearance().backgroundColor = UIColor(red: 255/255, green: 191/255, blue: 44/255, alpha: 1)
-        UINavigationBar.appearance().barTintColor = UIColor(red: 255/255, green: 191/255, blue: 44/255, alpha: 1)
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor(red: 255/255, green: 191/255, blue: 44/255, alpha: 1)
+        navBarAppearance.shadowImage = nil // line
+        navBarAppearance.shadowColor = nil // line
+        UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self]).standardAppearance = navBarAppearance
+        UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self]).scrollEdgeAppearance = navBarAppearance
+        navBarAppearance.titleTextAttributes = [.foregroundColor : UIColor.white]
         return true
     }
 
@@ -87,12 +93,5 @@ public extension UIApplication {
         return window
         
     }
-}
-
-extension UIApplication {
-
-var statusBarView: UIView? {
-    return value(forKey: "statusBar") as? UIView
-   }
 }
 

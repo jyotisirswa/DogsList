@@ -65,20 +65,3 @@ final class HTTPClientClass  {
     }
 }
 
-//let dataTask = URLSession.shared.dataTask(with: request) {
-//    data,response,error in
-//    print("anything")
-//    do {
-//        if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-//            self.teamResult = jsonResult
-//            print(jsonResult)
-//            //Use GCD to invoke the completion handler on the main thread
-//            DispatchQueue.main.async() {
-//              completion(NSArray(object: teamResult), Int(teamInput.text!)!)
-//            }
-//        }
-//    } catch let error as NSError {
-//        print(error.localizedDescription)
-//    }
-//}
-//dataTask.resume()

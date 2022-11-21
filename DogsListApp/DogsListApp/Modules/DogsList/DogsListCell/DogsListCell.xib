@@ -88,7 +88,7 @@
                 <outlet property="dogWeightLabel" destination="wVI-Gy-xuK" id="k53-df-KOc"/>
                 <outlet property="viewBG" destination="9wi-gJ-9ux" id="w0E-pW-6Qj"/>
             </connections>
-            <point key="canvasLocation" x="209.42028985507247" y="170.08928571428569"/>
+            <point key="canvasLocation" x="209.42028985507247" y="169.41964285714286"/>
         </tableViewCell>
     </objects>
 </document>

@@ -36,6 +36,7 @@ final class DogsListPresenter : DogsListPresenterProtocol {
     
     func viewDidLoad() {
         view?.setupTableView()
+        view?.showLoadingView()
         fetchDogs()
     }
     
@@ -45,7 +46,6 @@ final class DogsListPresenter : DogsListPresenterProtocol {
     
     func refresh() {
         fetchDogs()
-
     }
     func numberOfRowsInSection() -> Int {
         return dogsList.count
@@ -62,7 +62,6 @@ final class DogsListPresenter : DogsListPresenterProtocol {
     
     //We can change limit and page as per our requirements, right now as mentioned in doc 105 so I used 105 as constant
     private func fetchDogs(limitObj : Int? = 105, pageObj : Int? = 1) {
-        view?.showLoadingView()
         interactor.fetchDogsList(limit: limitObj!, page: pageObj!)
     }
 }

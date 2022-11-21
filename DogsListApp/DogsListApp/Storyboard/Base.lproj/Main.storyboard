@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="csm-Fd-s81">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController storyboardIdentifier="DogsListViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="MMA-lU-Udj" customClass="DogsListViewController" customModule="DogsListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hev-6r-Yai">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-0a-YIM">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-0a-YIM">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -38,7 +38,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxF-T5-YyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1365.217391304348" y="634.82142857142856"/>
+            <point key="canvasLocation" x="1200" y="620"/>
+        </scene>
+        <!--Dogs Details View Controller-->
+        <scene sceneID="kcM-Um-Jet">
+            <objects>
+                <viewController storyboardIdentifier="DogsDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PXA-pd-vGW" customClass="DogsDetailsViewController" customModule="DogsListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dI-8a-jOD">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-cg-srP">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="R7C-nN-Fpd">
+                                    <rect key="frame" x="0.0" y="82.333332061767564" width="390" height="60.000000000000014"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPA-j6-aoY" customClass="RoundButton" customModule="DogsListApp" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="10" width="350" height="40"/>
+                                            <color key="backgroundColor" red="1" green="0.74901960784313726" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="XUn-ja-s2B"/>
+                                            </constraints>
+                                            <color key="tintColor" systemColor="labelColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Add to favorites">
+                                                <fontDescription key="titleFontDescription" name="SFPro-Medium" family="SF Pro" pointSize="16"/>
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapAddFavourite:" destination="PXA-pd-vGW" eventType="touchUpInside" id="DeJ-Om-9mc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SPA-j6-aoY" firstAttribute="centerX" secondItem="R7C-nN-Fpd" secondAttribute="centerX" id="fpv-Bk-xSm"/>
+                                        <constraint firstItem="SPA-j6-aoY" firstAttribute="centerY" secondItem="R7C-nN-Fpd" secondAttribute="centerY" id="j41-L6-yMC"/>
+                                        <constraint firstItem="SPA-j6-aoY" firstAttribute="width" secondItem="R7C-nN-Fpd" secondAttribute="width" multiplier="0.897436" id="wYu-Cq-cVH"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellObj" rowHeight="15" id="hFr-Ue-4OK">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="15"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hFr-Ue-4OK" id="LZM-7A-chp">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CrQ-fW-uZP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CrQ-fW-uZP" firstAttribute="bottom" secondItem="I6h-cg-srP" secondAttribute="bottom" id="X33-Op-XiD"/>
+                            <constraint firstItem="I6h-cg-srP" firstAttribute="leading" secondItem="CrQ-fW-uZP" secondAttribute="leading" id="cYr-8c-vhk"/>
+                            <constraint firstAttribute="trailing" secondItem="I6h-cg-srP" secondAttribute="trailing" id="iPN-dG-t0e"/>
+                            <constraint firstItem="I6h-cg-srP" firstAttribute="top" secondItem="CrQ-fW-uZP" secondAttribute="top" id="mLF-Ss-wZn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFvrt" destination="SPA-j6-aoY" id="uCt-kj-N3c"/>
+                        <outlet property="footerView" destination="R7C-nN-Fpd" id="DDT-MU-fxJ"/>
+                        <outlet property="tableView" destination="I6h-cg-srP" id="UNA-Oi-RJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNe-SM-ssw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.8461538461538" y="619.9052132701421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zlx-Ar-bKT">
@@ -46,12 +120,16 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="csm-Fd-s81" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gPN-Bs-zNO">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="1" green="0.74901960779999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -67,10 +145,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gql-Sl-dUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="453.62318840579712" y="634.82142857142856"/>
+            <point key="canvasLocation" x="451" y="620"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="SPA-j6-aoY">
+            <size key="intrinsicContentSize" width="141.66666666666666" height="33.333333333333336"/>
+        </designable>
+    </designables>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

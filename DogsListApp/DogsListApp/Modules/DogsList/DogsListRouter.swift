@@ -36,8 +36,8 @@ extension DogsListRouter : DogsListRouterProtocol {
         switch route {
         case .detail(let dogObj):
             print("Rediring to DogsDetail Page")
-//            let detailVC = MovieDetailsViewRouter.createModule(movie: movieObj)
-//            viewController?.navigationController?.pushViewController(detailVC, animated: true)
+            let detailVC = DogsDetailRouter.createModule(dogsData: dogObj)
+            viewController?.navigationController?.pushViewController(detailVC, animated: true)
         }
     }
 }

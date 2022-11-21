@@ -14,6 +14,12 @@ struct DogData: Codable {
     let name, bredFor, breedGroup, lifeSpan: String?
     let temperament, origin, referenceImageID: String?
     let image: ImageData?
+    var isFvrtAdded : Bool? {
+        guard let isFvrt = UserDefaults.standard.value(forKey: "\(id)") as? Bool else {
+            return false
+        }
+        return isFvrt
+    }
 
     enum CodingKeys: String, CodingKey {
         case weight, height, id, name

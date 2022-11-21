@@ -17,6 +17,7 @@ protocol DogListCellProtocol: AnyObject {
 
 final class DogsListCell: UITableViewCell {
     
+    //MARK: - Properties & Variables
     @IBOutlet weak var viewBG: UIView! {
         didSet {
             viewBG.layer.cornerRadius = 10
@@ -57,10 +58,13 @@ extension DogsListCell: DogListCellProtocol {
     
     func setDogWeight(_ text: String) {
         dogWeightLabel.text = "Weight\n\(text) Kg"
+        dogWeightLabel.changeColor(textObj: "\(text) Kg")
     }
     
     func setDogHeight(_ text: String) {
         dogHeightLabel.text = "Height\n\(text) cm"
+        dogHeightLabel.changeColor(textObj: "\(text) cm")
+
     }
 }
 

@@ -16,7 +16,6 @@ protocol DogsListViewControllerProtocol: AnyObject {
 }
 
 class DogsListViewController: UIViewController {
-    
     //MARK: - Properties
     @IBOutlet private weak var tableView: UITableView!
     var presenter: DogsListPresenterProtocol!
@@ -42,6 +41,10 @@ class DogsListViewController: UIViewController {
     
     @objc func refresh() {
         presenter?.refresh()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
     }
     
 }
@@ -93,6 +96,7 @@ extension DogsListViewController : DogsListViewControllerProtocol, LoadingShowab
     }
     
     func setUpView() {
+        self.navigationItem.title = "Featured breeds"
         setAccessibilityIdentifiers()
     }
 }

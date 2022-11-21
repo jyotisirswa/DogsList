@@ -64,3 +64,7 @@ extension UIViewController {
     }
 }
 
+enum StoryBoard: String {
+    case Main
+}
+
