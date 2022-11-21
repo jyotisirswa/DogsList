@@ -4,6 +4,18 @@
 ###### Having dogs Listing page. 
 ###### Having Detail Page. (Add to Favourite Button), which will add or remove dogs from favourite locally.
 
+### Prerequisites
+
+* [Xcode](https://developer.apple.com/xcode/) Version 13.0
+
+### Installing
+
+First of all download and install Xcode, then clone the repository
+
+```
+https://github.com/jyotisirswa/DogsList
+```
+
 > Keywords:- VIPER Architecture, Protocols, Extensions, NotificationObserver, Enums, TypeAlias, Codable, Computed Property, Result, Userdefaults, Prorperty Observers, private initializer, Final Classes, Optional Binding, AccessModifiers, Type properties, Sequence, Generic functions 
 
 [![Simulator-Screen-Shot-i-Phone-8-Plus-2022-11-21-at-14-10-51.png](https://i.postimg.cc/wjSZ0x6C/Simulator-Screen-Shot-i-Phone-8-Plus-2022-11-21-at-14-10-51.png)](https://postimg.cc/dhj50YZ6)
